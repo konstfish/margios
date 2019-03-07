@@ -17,3 +17,7 @@ echo "WantedBy=multi-user.target" >> /etc/systemd/system/margios.service
 systemctl enable margios.service
 systemctl start margios.service
 systemctl status margios.service
+
+sudo apt-get install python3-pip
+sudo pip3 install telegram-send
+telegram-send --configure
