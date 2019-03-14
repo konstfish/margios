@@ -1,7 +1,7 @@
 # margios
 Like nagios but simpler and smaller and with telegram as medium
 
-Temp Readme & Setup Instructions
+### Setup Instructions
 
 Step 1. Create a new bot with [@BotFather](https://t.me/BotFather) on Telegram and get the api token
 
