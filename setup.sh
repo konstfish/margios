@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo google.at >> hosts.txt
+echo 1.1.1.1 >> hosts.txt
+
 echo "Seting up Systemd Service"
 echo "[Unit]" >> /etc/systemd/system/margios.service
 echo "Description=Marios's Nagius" >> /etc/systemd/system/margios.service
