@@ -1,5 +1,7 @@
 # margios
-Like Nagios but simpler and smaller and uses Telegram as medium
+Like Nagios but simpler and smaller and uses Telegram as medium.
+
+(Works 100% on raspbian)
 
 ### Setup Instructions
 
