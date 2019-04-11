@@ -1,5 +1,5 @@
 # margios
-Like nagios but simpler and smaller and with telegram as medium
+Like Nagios but simpler and smaller and uses Telegram as medium
 
 ### Setup Instructions
 
