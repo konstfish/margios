@@ -1,0 +1,4 @@
+1.1.1.1
+mariomichel.com
+konst.fish
+ssh.konst.fish

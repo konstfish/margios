@@ -3,7 +3,18 @@ Like Nagios but simpler and smaller and uses Telegram as medium.
 
 (Works 100% on raspbian)
 
-### Setup Instructions
+### Setup Instructions - docker
+
+1. Create a telegram-send.conf
+
+2. 
+```
+sudo docker build -t margios ./
+
+sudo docker run -d -v /stor/margios/hosts.txt:/root/hosts.txt --name margios margios
+```
+
+### Setup Instructions (normal version)
 
 Step 1. Create a new bot with [@BotFather](https://t.me/BotFather) on Telegram and get the api token
 

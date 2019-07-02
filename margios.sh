@@ -1,7 +1,7 @@
 #!/bin/bash
 HOST=0 # IP or Domain of the Host
 packages=1 # DO NOT TOUCH
-checkinvental=10
+checkinvental=30
 recheckinvental=3
 recheckpackages=3
 
@@ -22,8 +22,8 @@ while true
       else
         echo -e "Checking Host : \e[35m$HOST\e[39m \e[31mDOWN\e[39m"
         date=`date +%d-%m-%Y_%H:%M:%S`
-        printf "Host : $HOST\nState : DOWN\nTime : $date" | telegram-send --stdin
-        telegram-send ""
+        printf "Host : $HOST\nState : DOWN\nTime : $date" | telegram-send -g --stdin
+        telegram-send -g ""
         DOWN=1
         while [ "$DOWN" -eq 1 ]; do
           if ping -c 1 $HOST &> /dev/null
@@ -31,7 +31,7 @@ while true
             DOWN=0
             date=`date +%d-%m-%Y_%H:%M:%S`
             echo -e "Host \e[35m$HOST\e[39m \e[32mUP\e[39m"
-            printf "Host : $HOST\nState : UP\nTime : $date" | telegram-send --stdin
+            printf "Host : $HOST\nState : UP\nTime : $date" | telegram-send -g --stdin
           else
             sleep $checkinvental
             DOWN=1
